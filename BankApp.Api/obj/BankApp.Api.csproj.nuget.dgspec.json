@@ -1,0 +1,326 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Api\\BankApp.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Api\\BankApp.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Api\\BankApp.Api.csproj",
+        "projectName": "BankApp.Api",
+        "projectPath": "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Api\\BankApp.Api.csproj",
+        "packagesPath": "C:\\Users\\akchava\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\akchava\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Application\\BankApp.Application.csproj": {
+                "projectPath": "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Application\\BankApp.Application.csproj"
+              },
+              "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Contracts\\BankApp.Contracts.csproj": {
+                "projectPath": "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Contracts\\BankApp.Contracts.csproj"
+              },
+              "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Infrastructure\\BankApp.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Infrastructure\\BankApp.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Application\\BankApp.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Application\\BankApp.Application.csproj",
+        "projectName": "BankApp.Application",
+        "projectPath": "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Application\\BankApp.Application.csproj",
+        "packagesPath": "C:\\Users\\akchava\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\akchava\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Domain\\BankApp.Domain.csproj": {
+                "projectPath": "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Domain\\BankApp.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Contracts\\BankApp.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Contracts\\BankApp.Contracts.csproj",
+        "projectName": "BankApp.Contracts",
+        "projectPath": "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Contracts\\BankApp.Contracts.csproj",
+        "packagesPath": "C:\\Users\\akchava\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\akchava\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Domain\\BankApp.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Domain\\BankApp.Domain.csproj",
+        "projectName": "BankApp.Domain",
+        "projectPath": "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Domain\\BankApp.Domain.csproj",
+        "packagesPath": "C:\\Users\\akchava\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\akchava\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Infrastructure\\BankApp.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Infrastructure\\BankApp.Infrastructure.csproj",
+        "projectName": "BankApp.Infrastructure",
+        "projectPath": "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Infrastructure\\BankApp.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\akchava\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\akchava\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Application\\BankApp.Application.csproj": {
+                "projectPath": "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Application\\BankApp.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.30.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

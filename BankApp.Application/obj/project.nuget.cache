@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "7UyDH5pEz+Tr5xL/xF+/0rXy1LJLy9K8Vsm4iGNj2onQdCex/iTbXoUZfkZ2F5G/9bCJrksWYJyubye7YHB1SA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\akchava\\KT Proj\\Clean Architecture Proj\\BankApp\\BankApp.Application\\BankApp.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\akchava\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

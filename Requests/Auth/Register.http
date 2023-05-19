@@ -1,0 +1,14 @@
+
+POST https://localhost:7190/auth/register
+Content-Type: application/json
+
+
+{
+    "firstName" : "Aniket",
+    "lastName" : "chavan",
+    "email" : "aniket@gmail.com",
+    "city": "Pune",
+    "password" : "Pass@123",
+    "gender": "Male",
+    "accountlimit": 10000
+}

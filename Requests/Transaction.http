@@ -1,0 +1,8 @@
+POST https://localhost:7190/transaction/withdrawal
+Content-Type: application/json
+
+
+{
+    "accountNumber" : "79697980",
+    "amount" : 100.00
+}
