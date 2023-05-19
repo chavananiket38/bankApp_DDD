@@ -1,4 +1,4 @@
-POST https://localhost:7190/transaction/withdrawal
+POST https://localhost:7190/transaction/deposit
 Content-Type: application/json
 
 
