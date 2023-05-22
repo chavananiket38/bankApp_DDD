@@ -1,8 +1,8 @@
-POST https://localhost:7190/transaction/deposit
+PUT https://localhost:7190/transaction/withdrawal
 Content-Type: application/json
-
 
 {
     "accountNumber" : "79697980",
+    "password": "Pass@123",
     "amount" : 100.00
 }

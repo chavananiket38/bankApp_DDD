@@ -6,9 +6,9 @@ Content-Type: application/json
 {
     "firstName" : "Aniket",
     "lastName" : "chavan",
-    "email" : "aniket@gmail.com",
+    "email" : "aniketchavan@gmail.com",
     "city": "Pune",
     "password" : "Pass@123",
     "gender": "Male",
-    "accountlimit": 10000
+    "accountlimit": 100000
 }

@@ -8,3 +8,10 @@ public record TransactionResponse(
     string Email,
     decimal AccountBalance
 );
+public record FundTransferResponse(
+    string SourceAccountNumber,
+    decimal SourceAccountBalance,
+    
+    string DestinationAccountNumber,
+    decimal DestinationAccountBalance
+);

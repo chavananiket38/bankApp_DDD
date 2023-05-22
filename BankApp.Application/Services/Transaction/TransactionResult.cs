@@ -7,3 +7,12 @@ public record TransactionResult(
     string Email,
     decimal AccountBalance
 );
+
+public record FundTransferResult(
+    string SourceAccountNumber,
+    decimal SourceAccountBalance,
+    
+    string DestinationAccountNumber,
+    decimal DestinationAccountBalance
+
+);

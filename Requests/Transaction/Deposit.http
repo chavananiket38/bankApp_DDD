@@ -1,0 +1,7 @@
+PUT https://localhost:7190/transaction/deposit
+Content-Type: application/json
+
+{
+    "accountNumber" : "79697980",
+    "amount" : 100.00
+}

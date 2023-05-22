@@ -1,0 +1,9 @@
+PUT https://localhost:7190/transaction/fundTransfer
+Content-Type: application/json
+
+{
+    "sourceAccountNumber" : "79697980",
+    "destinationAccountNumber" : "41452119",
+    "sourceAccountPassword": "Pass@123",
+    "amount" : 600.00
+}

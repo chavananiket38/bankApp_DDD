@@ -17,9 +17,9 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext(connectionString!);
 
 var app = builder.Build();
-{
-    app.UseHttpsRedirection();
-    app.UseAuthentication();
-    app.MapControllers();
-    app.Run();
-}
+
+app.UseHttpsRedirection();
+app.UseAuthentication();
+app.MapControllers();
+app.Run();
+

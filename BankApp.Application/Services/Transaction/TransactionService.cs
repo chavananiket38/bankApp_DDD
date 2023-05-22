@@ -1,6 +1,7 @@
 
 using BankApp.Application.Common.Interfaces.Persistence;
 using BankApp.Domain.Entities;
+using System.Transactions;
 
 namespace BankApp.Application.Services.Transaction;
 
@@ -13,7 +14,7 @@ public class TransactionService : ITransactionService{
         _accountRepository = accountRepository;
     }
 
-    public TransactionResult Withdrawal(string accountNumber, decimal amount){
+    public TransactionResult Withdrawal(string accountNumber, string password, decimal amount){
         var account = _accountRepository.GetAccountByAccountNumber(accountNumber);
         if(account is null){
             throw new Exception("Account with given account number does not exist");
@@ -24,7 +25,11 @@ public class TransactionService : ITransactionService{
         }
 
         if(amount<1 || amount>account.AccountBalance || amount>account.AccountLimit){
-            throw new Exception("Invalid amount or amount is greater than daily limit");
+            throw new Exception("Invalid amount or amount is greater than account balance, account balance = " + account.AccountBalance );
+        }
+
+        if(password != account.Password){
+            throw new Exception("Wrong password, transaction failed");
         }
 
         account.AccountBalance -= amount;
@@ -51,7 +56,7 @@ public class TransactionService : ITransactionService{
         }
 
         if(amount<1 || amount>account.AccountLimit){
-            throw new Exception("Invalid amount");
+            throw new Exception("Invalid amount, Daily account limit = " + account.AccountLimit);
         }
 
         account.AccountBalance += amount;
@@ -64,6 +69,43 @@ public class TransactionService : ITransactionService{
             account.LastName,
             account.Email,
             account.AccountBalance
+        );
+    }
+
+    public FundTransferResult FundTransfer(string sourceAccountNumber, string destinationAccountNumber,
+    string sourceAccountPassword, decimal amount){
+        var SourceAccount = _accountRepository.GetAccountByAccountNumber(sourceAccountNumber);
+        var DestinationAccount = _accountRepository.GetAccountByAccountNumber(destinationAccountNumber);
+
+        if (SourceAccount is null)
+                throw new InvalidOperationException("The Source Account Number is Invalid.");
+
+            
+        if (DestinationAccount is null)
+            throw new InvalidOperationException("The Destination Account Number is Invalid.");
+
+        using var txnScope = new TransactionScope(TransactionScopeOption.RequiresNew);
+        try
+        {
+
+            Withdrawal(sourceAccountNumber, sourceAccountPassword, amount);
+
+            Deposit(destinationAccountNumber, amount);
+
+            txnScope.Complete();
+        } catch (Exception ex)
+        {
+            txnScope.Dispose();
+            
+            throw new Exception(ex.Message);
+            throw new Exception("Transaction Failed");
+        }
+
+        return new FundTransferResult(
+            SourceAccount.AccountNumber,
+            SourceAccount.AccountBalance,
+            DestinationAccount.AccountNumber,
+            DestinationAccount.AccountBalance
         );
     }
 
