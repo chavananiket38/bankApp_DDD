@@ -1,0 +1,6 @@
+GET https://localhost:7190/account/details
+Content-Type: application/json
+
+{
+    "accountNumber" : "79697980"
+}

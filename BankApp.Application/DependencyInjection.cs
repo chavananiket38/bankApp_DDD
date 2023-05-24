@@ -1,3 +1,4 @@
+using BankApp.Application.Services.Accounts;
 using BankApp.Application.Services.Authentication;
 using BankApp.Application.Services.Transaction;
 using Microsoft.Extensions.DependencyInjection;
@@ -10,6 +11,7 @@ public static class DependencyInjection
     {
         services.AddScoped<IAuthenticationService, AuthenticationService> ();
         services.AddScoped<ITransactionService, TransactionService> ();
+        services.AddScoped<IAccountService, AccountService> ();
         return services;
     }
 }
